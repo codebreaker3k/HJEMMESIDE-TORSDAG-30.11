@@ -1,28 +1,56 @@
-body {background-color:rgb(73, 94, 94)
-}
-h1 {
-    color: black;
-    text-align: center;
-    font-size:medium
-}
-* {
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #495e5e, #19bebe);
+    background-image: url(header\ backg.png)
 }
-header {
-    height: 50px;
-    background-color: rgb(12, 3, 54);
 
+header {
+    height: 80px;
+    background-color: #0c0336;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 80%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+main {
+    flex: 1; /* Lar main content vokse og ta opp ledig plass. */
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+
+footer {
+    margin-top: auto; /* Dytter footer til bunn av p */
+    padding: 10px;
+    background-color: #0c0336;
+    color: #fff;
+    text-align: center;
 }
 img {
-    width: 120px;
-    height: 50px;
-    float:right;
-
+    float:right;     height: 50px;
 }
-nav {
-    height: 50px;
-    line-height: 50px;
-    font-size: 20px;
-    text-align: center;}
